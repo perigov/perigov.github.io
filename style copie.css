@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: royalblue;
+}
+
+a:active{
+    font-size: 90%;
+}
+
+.header {
+    padding: 2%;
+    background-color: grey;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+}
+
+#name {
+    font-size: 200%;
+}
+
+#navigation {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    justify-content: flex-end;
+    list-style-position:outside
+}
+
+#navigation li {
+    margin : 10px
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.blurb {
+    font-style: italic;
+    color: white;
+    font-size: 115%;
+    margin-right: 4%;
+}
+
+#profile_pic{
+    width: 50%;
+    height: auto;
+}
+
+#project_list {
+    border-style: solid;
+    border-color: black;
+    border-radius: 15%;
+    padding: 10px;
+    width: 20%;
+    height: 20%;
+    margin: 15px auto
+}
+
+#project_nav_title{
+    margin-bottom: 40px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.list_element_project {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list_element_project_link {
+    color: black;
+}
+
+.list_element_project_link:hover {
+    font-size: 110%;
+    color: royalblue;
+}
+
+.project {
+    padding: 15px;
+}
+
+#Hyrule_castle {
+    background-color: gray;
+    color: white;
+}
+
+#My_irc {
+    background-color: lightgrey;
+}
+
+#Bubble_my_tea {
+    background-color: grey;
+    color: white;
+}
+
+.project_title {
+    margin-bottom: 25px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.screenshot {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.project_description {
+    margin: 15px auto;
+    font-size: large;
+    width: 60%;
+    text-align: center;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#Contacts {
+    padding-top: 20px;
+    font-size: 120%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Perigois</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="name">Vincent PERIGOIS</h1>
+        <nav>
+            <ul id="navigation">
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+                <li><a href="#project_list">Projets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="about" class="about">
+            <img id="profile_pic" src="content/profile_pic.png" alt="profile_pic" title="This is me">
+            <p class="blurb">Je suis un développeur en apprentissage, actuellement en recherche d'alternance. Je suis curieux des différentes technologies liées à ce métier et désireux d'apprendre pour solidifier ma reconversion.</p>
+        </div>
+        <div id="project_list">
+            <h1 id="project_nav_title">Projets</h1>
+            <nav id="project_nav">
+                <ul>
+                    <li class="list_element_project"><a class="list_element_project_link" href="#Hyrule_castle">Hyrule Castle</a></li>
+                    <li class="list_element_project"><a class="list_element_project_link" href="#My_irc">MyIRC</a></li>
+                    <li class="list_element_project"><a class="list_element_project_link" href="#Bubble_my_tea">BubbleMyTea</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="Hyrule_castle" class="project">
+            <h2 class="project_title">Hyrule Castle</h2>
+            <img class="screenshot" src="content/Hyrule_castle.png" alt="Hyrule_castle" title="Hyrule_castle">
+            <p class="project_description">Un RPG textuel en CLI inspiré de l'univers de The Legend of Zelda réalisé avec Typescript. Hautement personnalisable, protégeant le joueur contre les erreurs d'utilisation et conçu de manière à pouvoir facilement développer du contenu supplémentaire. </p>
+        </div>
+        <div id="My_irc" class="project">
+            <h2 class="project_title">MyIRC</h2>
+            <img class="screenshot" src="content/My_IRC.png" alt="My_IRC" title="My_IRC_login">
+            <p class="project_description">Chat en ligne basé sur le modèle IRC et permettant à plusieurs utilisateurs de se connecter pour discuter en temps réel dans une chat room. Réalisé en typescript et utilise socket.io pour gérer les websockets et permettre la communication entre clients.</p>
+        </div>
+        <div id="Bubble_my_tea" class="project">
+            <h2 class="project_title">BubbleMyTea</h2>
+            <img class="screenshot" src="content/Bubble_my_tea.png" alt="BubbleMyTea" title="Bubble_my_tea_profile_page">
+            <p class="project_description">Site E-commerce pour la vente de Bubble teas. Réalisé grâce au framework php Laravel et reposant sur une base de données MySQL. Gère des comptes utilisateurs et administrateurs ainsi qu'une liste de produits, la modification des profils et un panier. Je me suis personnellement occupé de la page profil et de la modification des informations utilisateurs dans la base de données.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <h3 id="Contacts">Contacts</h3>
+            <ul>
+                <li>Mail :<a href = "mailto: vincent.perigois@gmail.com">vincent.perigois@gmail.com</a></li><br>
+                <li>Linkedin : <a href="https://www.linkedin.com/in/vincent-perigois-30a070154/?originalSubdomain=fr">Vincent Perigois</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
